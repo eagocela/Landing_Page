@@ -1,0 +1,134 @@
+@media only screen and (min-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  html {
+    min-height: 100%;
+  }
+
+  body {
+    min-width: 100%;
+    min-height: 100vh;
+    display: grid;
+  }
+
+  /* MENU */
+
+  header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .logo img {
+    width: 8rem;
+    justify-content: flex-start;
+    position: fixed;
+    left: 1.5rem;
+    top: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .navLinks ul li {
+    list-style: none;
+    margin-right: 4rem;
+    margin-bottom: 0;
+  }
+
+  .navList {
+    display: flex;
+    align-items: center;
+  }
+
+  .navLinks ul li a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(251, 255, 0);
+    line-height: 28px;
+  }
+
+  .navLinks ul li a:hover {
+    color: rgb(255, 255, 255);
+  }
+
+  .navLinks ul li a:active {
+    color: rgba(0, 250, 33);
+  }
+
+  nav .menuIcon {
+    display: none;
+  }
+
+  .navLinks {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    /* right: -6em; */
+    width: 100%;
+    visibility: visible;
+    max-height: unset;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .navLinks ul {
+    opacity: 1;
+    flex-direction: row;
+    justify-content: left;
+    position: fixed;
+  }
+
+  .maincontainer {
+    width: 100%;
+    height: 100%;
+    margin-top: 69px;
+    /* border: 5px solid limegreen; */
+    display: grid;
+  }
+
+  #home {
+    column-gap: var(--container-gap, 2rem);
+    grid-template-columns: minmax(1rem, 1fr) repeat(2, minmax(0, 30rem)) minmax(
+        1rem,
+        1fr
+      );
+    place-items: center;
+  }
+  #home > *:first-child {
+    grid-column: 2;
+  }
+
+  #home > *:last-child {
+    grid-column: 3;
+  }
+
+  /*   LISTEN   */
+
+  #listen {
+    background-color: transparent;
+    background-image: url(./assets/paperbgdesktop.png);
+    background-size: cover;
+  }
+
+  #more {
+    padding: 2rem 5rem 5rem 5rem;
+  }
+
+  .meetgang {
+    background: rgb(0, 0, 0, 0.7);
+    margin: 0 5rem 2rem 5rem;
+    padding: 2rem;
+    border-radius: 10px;
+  
+    text-align: left;
+  }
+}
